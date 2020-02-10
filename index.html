@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-hans">
 <head>
-    <title>张知通的个人简历</title>
+    <title>SheltonZhang's Website</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./a.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
-    </script>
+    <link rel="stylesheet" href="./style.css">
+    <script src=./js/jquery-3.1.0.slim.min.js></script>
+    <script src="//at.alicdn.com/t/font_1633867_bg32e880ril.js"></script>
      <style>
       </style>
      <script></script>
@@ -45,25 +45,28 @@
                 </ul>
             </nav>
     </div>
-    <div class="banner" style="background-image: url(#)" "></div>
-    <main>
-        <div class="card">
-        <div class="pic">
-            <img src="" alt="头像">
+    <div class="banner">
+        <div class="mask">
         </div>
-        <div class="text">
-            <div class="profile">
-            <span class="welcome">Welcome</span>
-            <h1>张知通</h1>
-            <h2>前端开发</h2>
-            <hr>
+    </div>
+    <main>
+        <div class="userCard">
+        <div class="pictext clearfix">
+        <div class="avatar">
+            <img src="./img/avatar.jpg" width="280" height="400" alt="头像">
+        </div>
+        <div class="myself">
+            <span class="welcome">hola<span class="triangle"></span></span>
+            <h1 class="h1l">张知通</h1>
+                <p class="p1"> 前端开发工程师</p>
+            <hr class="hr1">
             <dl>
                 <dt>年龄</dt>
                 <dd>22</dd>
                 <dt>城市</dt>
                 <dd>北京</dd>
-                <dt>专业</dt>
-                <dd>交通运输</dd>
+                <dt>学校</dt>
+                <dd>北京交通大学</dd>
                 <dt>邮箱</dt>
                 <dd>tongigles@icloud.com</dd>
                 <dt>手机号码</dt>
@@ -71,17 +74,17 @@
                 <dt>毕业时间</dt>
                 <dd>2020年/7月/1日</dd>
             </dl>
-            </div>
+        </div>
+        </div>
+        </div>
             <footer class="media">
-                <a href="#"><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+                <a href="#"><img src="./img/icon/email.png" width="20px" height="20px" padding="20px"value = E-mail" alt=""></a>
+                <a href=""><img src="./img/icon/github.png" width="20px"height="20px" alt=""></a>
+                <a href=""><img src="./img/icon/blogger.png"  width="20px" height="20px" alt=""></a>
+                <a href=""><img src="./img/icon/ins.png"  width="20px" height="20px"  alt=""></a>
+                <a href=""><img src="./img/icon/weibo.png" width="20px" height="20px"alt=""></a>
             </footer>
+        </div>
         </div>
         </div>
         <a href="#">Download PDF Resume </a>
@@ -112,8 +115,8 @@
     <div class="ui"></div>
     <div class="yt"></div>
  <script href="text/JavaScript">
-// $(".clearfix").children("li").css({"float":"left"});
-// $(".clearfix").css({"list-style":"none","margin":"0","padding":"0"})
+$(".media").children().css({"margin":"10px","padding-top":"30px","padding-down":"30px"});
+// $(".media").css({"list-style":"none","margin":"0","padding":"0"})
 
  </script>
  </body>
