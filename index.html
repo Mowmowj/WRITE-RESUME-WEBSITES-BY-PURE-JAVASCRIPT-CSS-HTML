@@ -1,14 +1,173 @@
 <!DOCTYPE html>
 <html lang="zh-hans">
 <head>
-    <title>SheltonZhang's Website</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css">
-    <script src=./js/jquery-3.1.0.slim.min.js></script>
-    <script src="//at.alicdn.com/t/font_1633867_bg32e880ril.js"></script>
-     <style>
-      </style>
-     <script></script>
+<title>SheltonZhang's Website</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./style.css">
+<script src=./js/jquery-3.1.0.slim.min.js></script>
+<script src="//at.alicdn.com/t/font_1633867_bg32e880ril.js"></script>
+<style>
+.downloadRS{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #CDCFD1;
+    background-color: #efefef;
+    color:inherit;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight:bold;
+    color: #3d4451;
+    /* font-family: ; */
+    margin: 32px 0;
+}
+.downloadRSCover{
+    text-align: center;
+}
+.downloadRS:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+    transition: box-shadow 0.25s;
+}
+.userCard{
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFFFFF ;
+    border-radius: 2px;
+}
+.media{
+    border-radius: 1px;
+}
+.intro{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-family: 楷体;
+    font-size: 22px;
+    text-align: center; 
+}
+.skills{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills> h2{
+    color: #3d4451;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600px;
+}
+h3{
+    font-weight: normal;
+}
+.skills> h3{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-left: 40px;
+}
+ul,ol{
+    list-style: none;
+}
+.skills> ol{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    background-color: white;
+    padding: 42px 50px 9px;
+    margin-top: 30px;
+}
+.skills> ol> li{
+    float: left;
+    width: 48%;
+}
+.progress{
+    height: 5px;
+    background: #fae1e1;
+    border-radius: 3px;
+    margin: 4px 0 40px ;
+}
+.skills> ol> li:nth-child(even){
+    float: right;
+}
+.jindu{
+    background-color: #e6686a;
+    height:100%;
+    
+    border-radius: 2px;
+}
+.work{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.works> h2{
+    color: #3d4451;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600px;
+}
+section.works{
+    text-align: center;
+}
+section.works> nav> ol{
+display: inline-block;
+vertical-align: top;
+margin: 0 auto;
+/* border: 1px solid red; */
+}
+section.works> nav> ol> li{
+    float: left;
+    margin-left: 40px;
+    font-weight: 500;
+}
+section.works> nav> ol> li:nth-child(1){
+    margin-left: 0px;
+}
+#pb{
+    /* border: 1px solid red;
+    */
+    background: #FFFFFF;
+    height: 7px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    border-radius: 2px;
+}
+.bar-inner{
+    height: 100%;
+    background:#e6686a;
+    width: 10%;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+section.works> nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+}
+/*作品展示部分头部的粉色条控制下面的margin-left和width方便后续操作 
+
+*/
+section.works> nav .bar.state-1 .bar-inner{ 
+    margin-left: 0px;
+    width: 40px;
+}
+section.works> nav .bar.state-2 .bar-inner{
+    margin-left: 70px;
+    width: 103px;
+}
+section.works> nav .bar.state-3 .bar-inner{
+    margin-left: 214px;
+    width: 115px;
+}
+
+</style>
+<script></script>
 </head>
  <body>
     <div class="topBar clearfix">
@@ -49,7 +208,7 @@
         <div class="mask">
         </div>
     </div>
-    <main>
+    <main style="margin-top: -280px;">
         <div class="userCard">
         <div class="pictext clearfix">
         <div class="avatar">
@@ -72,51 +231,106 @@
                 <dt>手机号码</dt>
                 <dd>18801279107</dd>
                 <dt>毕业时间</dt>
-                <dd>2020年/7月/1日</dd>
+                <dd>2020年<span> </span><span> </span>7月<span> </span>1日</dd>
             </dl>
         </div>
         </div>
-        </div>
+        
             <footer class="media">
-                <a href="#"><img src="./img/icon/email.png" width="20px" height="20px" padding="20px"value = E-mail" alt=""></a>
-                <a href=""><img src="./img/icon/github.png" width="20px"height="20px" alt=""></a>
-                <a href=""><img src="./img/icon/blogger.png"  width="20px" height="20px" alt=""></a>
-                <a href=""><img src="./img/icon/ins.png"  width="20px" height="20px"  alt=""></a>
-                <a href=""><img src="./img/icon/weibo.png" width="20px" height="20px"alt=""></a>
+                <a href="#" class="a1">
+                    <img class= icon1 src="./img/icon/email.png" width="30px" height="30px"  alt="">  
+                </a>
+                <a href="#" class="a2">
+                    <img class= icon2 src="./img/icon/github.png" width="30px"height="30px" alt="">
+                </a>
+                <a href="#" class="a3">
+                    <img class= icon3 src="./img/icon/blogger.png"  width="30px" height="30px" alt="">
+                </a>
+                <!-- <a href=""><img src="./img/icon/ins.png"  width="20px" height="20px"  alt=""></a> -->
+                <!-- <a href=""><img src="./img/icon/weibo.png" width="20px" height="20px"alt=""></a> -->
             </footer>
         </div>
         </div>
         </div>
-        <a href="#">Download PDF Resume </a>
-        <p>
-        张知通,  北京交通大学,   交通运输专业本科 </br>
+        <p class="downloadRSCover">
+        <a class="downloadRS" href="./pdf/resume.doc" target="_blank" download>下载PDF 简历</a>
+        </p>>
+        <p class="intro">
+        张知通,  北京交通大学, 交通运输专业本科 自学前端半年 </br>
         </p>
     </main>
-    <section>
-        <h2>技能个人技能</h2>
-            <ol>
-                <li>HTML 5 & CSS3</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Vue</li>
-                <!-- <li>React</li> -->
-                <li>HTTP</li>
+    <section class="skills">
+        <h2>个人技能</h2>
+            <ol class="clearfix">
+                <li>
+                    <h3>HTML 5 & CSS3</h3>
+                    <div class="progress">
+                        <div class="jindu" style="width:80%"></div>
+                    </div>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="jindu" style="width:70%"></div>
+                    </div>
+                </li>                <li>
+                    <h3>jQuery</h3>
+                    <div class="progress" >
+                        <div class="jindu"style="width:85%"></div>
+                    </div>
+                </li>                <li>
+                    <h3>Vue</h3>
+                    <div class="progress">
+                        <div class="jindu" style="width:40%"></div>
+                    </div>
+                </li>                <li>
+                    <h3>Node.js</h3>
+                    <div class="progress">
+                        <div class="jindu" style="width:20%"></div>
+                    </div>
+                </li>                <li>
+                    <h3>Wechat miniprogram
+                    </h3>
+                    <div class="progress">
+                        <div class="jindu" style="width:30%"></div>
+                    </div>
+                </li>
             </ol>
     </section>
+    <section class="works">
+        <h2>作品集</h2>  
     <nav>
-        <ol>
-            <li>所有</li>
-            <li>框架</li>
-            <li>原生JS & CSS</li>
+        <ol class="clearfix">
+            <li id="p1">ALL</li>
+            <li id="p2">FRAMEWORK</li>
+            <li id="p3">PURE JS & CSS</li>
         </ol>
+        <div id="pb"class="bar">
+            <div class="bar-inner">     
+            </div>
+        </div>      
     </nav>
+    <script>
+    p1.onclick=function(){
+    pb.className=("bar state-1") ;
+}
+    p2.onclick=function(){
+    pb.className=("bar state-2");
+}
+    p3.onclick=function(){
+    pb.className=("bar state-3");
+}
+    </script>
+</section>
     <div class="jobs"></div>
     <div class="big"></div>
     <div class="ui"></div>
     <div class="yt"></div>
  <script href="text/JavaScript">
-$(".media").children().css({"margin":"10px","padding-top":"30px","padding-down":"30px"});
+
+$(".media").children().css({"color:":"inherit","text-decoration":"none","padding":"20px"});
 // $(".media").css({"list-style":"none","margin":"0","padding":"0"})
+
 
  </script>
  </body>
