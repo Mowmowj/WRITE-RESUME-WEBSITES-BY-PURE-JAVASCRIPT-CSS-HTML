@@ -150,18 +150,18 @@ section.works> nav{
     vertical-align: top;
     margin-top: 18px;
 }
-/*作品展示部分头部的粉色条控制下面的margin-left和width方便后续操作 
+/*mark作品展示部分头部的粉色条控制margin-left和width方便调整
 
 */
-section.works> nav .bar.state-1 .bar-inner{ 
+section.works> nav .bar.stt-1 .bar-inner{ 
     margin-left: 0px;
     width: 40px;
 }
-section.works> nav .bar.state-2 .bar-inner{
+section.works> nav .bar.stt-2 .bar-inner{
     margin-left: 70px;
     width: 103px;
 }
-section.works> nav .bar.state-3 .bar-inner{
+section.works> nav .bar.stt-3 .bar-inner{
     margin-left: 214px;
     width: 115px;
 }
@@ -237,13 +237,13 @@ section.works> nav .bar.state-3 .bar-inner{
         </div>
         
             <footer class="media">
-                <a href="#" class="a1">
+                <a href="#" target="_blank" class="a1">
                     <img class= icon1 src="./img/icon/email.png" width="30px" height="30px"  alt="">  
                 </a>
-                <a href="#" class="a2">
+                <a href="https://github.com/Mowmowj" target="_blank" class="a2">
                     <img class= icon2 src="./img/icon/github.png" width="30px"height="30px" alt="">
                 </a>
-                <a href="#" class="a3">
+                <a href="https://mowmowj.github.io/"  target="_blank" class="a3">
                     <img class= icon3 src="./img/icon/blogger.png"  width="30px" height="30px" alt="">
                 </a>
                 <!-- <a href=""><img src="./img/icon/ins.png"  width="20px" height="20px"  alt=""></a> -->
@@ -312,13 +312,13 @@ section.works> nav .bar.state-3 .bar-inner{
     </nav>
     <script>
     p1.onclick=function(){
-    pb.className=("bar state-1") ;
+    pb.className=("bar stt-1") ;
 }
     p2.onclick=function(){
-    pb.className=("bar state-2");
+    pb.className=("bar stt-2");
 }
     p3.onclick=function(){
-    pb.className=("bar state-3");
+    pb.className=("bar stt-3");
 }
     </script>
 </section>
@@ -329,7 +329,7 @@ section.works> nav .bar.state-3 .bar-inner{
  <script href="text/JavaScript">
 
 $(".media").children().css({"color:":"inherit","text-decoration":"none","padding":"20px"});
-// $(".media").css({"list-style":"none","margin":"0","padding":"0"})
+
 
 
  </script>
