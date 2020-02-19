@@ -20,7 +20,6 @@
     font-weight:bold;
     color: #3d4451;
     /* font-family: ; */
-
     margin: 32px 0;
 }
 .downloadRSCover{
