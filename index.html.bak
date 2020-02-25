@@ -93,7 +93,7 @@ ul,ol{
     float: right;
 }
 .jindu{
-    background-color: #e6686a;
+    background-color: #E6686A;
     height:100%;
     
     border-radius: 2px;
@@ -140,7 +140,7 @@ section.works> nav> ol> li:nth-child(1){
 }
 .bar-inner{
     height: 100%;
-    background:#e6686a;
+    background:#E6686A;
     width: 10%;
     border-radius: 3px;
     transition: all 0.3s;
