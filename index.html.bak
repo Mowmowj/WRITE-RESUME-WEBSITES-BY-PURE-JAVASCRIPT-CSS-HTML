@@ -1,337 +1,246 @@
 <!DOCTYPE html>
-<html lang="zh-hans">
+<html lang="zh-CN">
 <head>
-<title>SheltonZhang's Website</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="./style.css">
-<script src=./js/jquery-3.1.0.slim.min.js></script>
-<script src="//at.alicdn.com/t/font_1633867_bg32e880ril.js"></script>
-<style>
-.downloadRS{
-    font-size: 14px;
-    line-height: 16px;
-    padding: 21px 55px;
-    border: 1px solid #CDCFD1;
-    background-color: #efefef;
-    color:inherit;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 4px;
-    font-weight:bold;
-    color: #3d4451;
-    /* font-family: ; */
-    margin: 32px 0;
-}
-.downloadRSCover{
-    text-align: center;
-}
-.downloadRS:hover{
-    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
-    transition: box-shadow 0.25s;
-}
-.userCard{
-    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#FFFFFF ;
-    border-radius: 2px;
-}
-.media{
-    border-radius: 1px;
-}
-.intro{
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 500;
-    font-family: 楷体;
-    font-size: 22px;
-    text-align: center; 
-}
-.skills{
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.skills> h2{
-    color: #3d4451;
-    margin-top: 70px;
-    text-align: center;
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 600px;
-}
-h3{
-    font-weight: normal;
-}
-.skills> h3{
-    font-size: 14px;
-    line-height: 1.1;
-    padding-left: 40px;
-}
-ul,ol{
-    list-style: none;
-}
-.skills> ol{
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
-    background-color: white;
-    padding: 42px 50px 9px;
-    margin-top: 30px;
-}
-.skills> ol> li{
-    float: left;
-    width: 48%;
-}
-.progress{
-    height: 5px;
-    background: #fae1e1;
-    border-radius: 3px;
-    margin: 4px 0 40px ;
-}
-.skills> ol> li:nth-child(even){
-    float: right;
-}
-.jindu{
-    background-color: #E6686A;
-    height:100%;
-    
-    border-radius: 2px;
-}
-.work{
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.works> h2{
-    color: #3d4451;
-    margin-top: 70px;
-    text-align: center;
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 600px;
-}
-section.works{
-    text-align: center;
-}
-section.works> nav> ol{
-display: inline-block;
-vertical-align: top;
-margin: 0 auto;
-/* border: 1px solid red; */
-}
-section.works> nav> ol> li{
-    float: left;
-    margin-left: 40px;
-    font-weight: 500;
-}
-section.works> nav> ol> li:nth-child(1){
-    margin-left: 0px;
-}
-#pb{
-    /* border: 1px solid red;
-    */
-    background: #FFFFFF;
-    height: 7px;
-    margin-top: 5px;
-    margin-bottom: 100px;
-    border-radius: 2px;
-}
-.bar-inner{
-    height: 100%;
-    background:#E6686A;
-    width: 10%;
-    border-radius: 3px;
-    transition: all 0.3s;
-}
-section.works> nav{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 18px;
-}
-/*mark作品展示部分头部的粉色条控制margin-left和width方便调整
-
-*/
-section.works> nav .bar.stt-1 .bar-inner{ 
-    margin-left: 0px;
-    width: 40px;
-}
-section.works> nav .bar.stt-2 .bar-inner{
-    margin-left: 70px;
-    width: 103px;
-}
-section.works> nav .bar.stt-3 .bar-inner{
-    margin-left: 214px;
-    width: 115px;
-}
-
-</style>
-<script></script>
+  <title>张知通的个人简历</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://at.alicdn.com/t/font_1655540_bcwgjsl0zk.js"></script>
 </head>
- <body>
-    <div class="topBar clearfix">
-        <a class="logo" href="" alt="logo" >
-        <span class="RS">ZZT</span>
-        <span class="card">.LIFE</span>
+
+<body>
+  <div id="topNavBar" class="topNavBar">
+    <div class="topNavBar-inner clearfix" style="text-align: center;">
+      <a class="logo" href="#" alt="logo" style="float: left;">
+        <span class="rs">ZZT</span><span class="card">.life</span>
+      </a>
+      <nav class="menu" >
+        <ul class="clearfix">
+          <li>
+            <a href="#siteAbout">关于我</a>
+          </li>
+          <li>
+            <a href="#siteSkills">技能</a>
+          </li>
+          <li>
+            <a href="#siteWorks">作品</a>
+            <ul class="submenu">
+            </ul>
+          </li>
+          <li>
+            <a href="https://mowmowj.github.io" target="_blank">博客</a>
+          </li>
+          <li>
+            <a href="https://github.com/Mowmowj" target="_blank">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <main>
+    <div data-x id="siteAbout" class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="./img/avatar.jpg" width=280 height=400 alt="头像">
+        </div>
+        <div class="text">
+          <span class="welcome" style="font-size: larger;">你好,我是一名前端开发工程师
+            <span class="triangle"></span>
+          </span>
+          <h1>张知通</h1>
+          <p></p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>22</dd>
+            <dt>所在城市</dt>
+            <dd>北京</dd>
+            <dt>学校</dt>
+            <dd>北京交通大学</dd>
+            <dt>邮箱</dt>
+            <dd>tongigles@icloud.com</dd>
+            <dt>手机</dt>
+            <dd>18801279107</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a title="Github" href="https://github.com/Mowmowj" target="_blank"> 
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-mao"></use>
+          </svg>
         </a>
-            <nav class="nav">
-                <ul id="headl" class="clearfix">
-                    <li class="1">
-                        <a href="">关于</a>
-                    </li>
-                    <li class="1">
-                        <a href="">技能</a>
-                    </li>
-                    <li class="1">
-                        <a href="">作品</a>
-                    </li>
-                    <li class="1">
-                        <a href="">博客</a>
-                    </li>
-                    <li class="1">
-                        <a href="">其他</a>
-                    </li>
-                    <li class="1">
-                        <a href="">日历</a>
-                    </li>
-                    <li class="1">
-                        <a href="">联系方式</a>
-                    </li>
-                    <li class="1">
-                        <a href="">其他</a>
-                    </li>
-                </ul>
-            </nav>
+        <a title="博客" href="https://mowmowj.github.io" target="_blank">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-blogger"></use>
+          </svg>
+        </a>
+        <a title="email"  href="mailto:tongigle@icloud.com" target="_blank">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-youjian"></use>
+          </svg>
+        </a>
+      </footer>
     </div>
-    <div class="banner">
-        <div class="mask">
+
+    <p class="downloadResume-wrapper">
+      <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+    </p>
+
+    <p class="selfIntroduction">
+      张知通， 北京交通大学应届生，交通运输专业, 自学前端半年
+      <br> 熟悉JavaScript、jQuery、移动端页面开发,能用Vue实现简单网站开发,理解MVC、MVVC等思想,了解小程序开发
+      <br> 熟悉Linux命令行、学习过C语言、C#等在校课程 
+    </p>
+
+  </main>
+  <section data-x id="siteSkills" class="skills">
+    <h2>技术栈</h2>
+    <ol class="clearfix">
+      
+      <li>
+        <h3>
+          JavaScript
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%"></div>
         </div>
+      </li>
+      <li>
+        <h3>
+          jQuery
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 70%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Vue.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 40%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          HTML 5 &amp; CSS 3
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Node.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress"  style="width: 30%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          小程序
+        </h3>
+        <div class="progressBar">
+          <div class="progress"  style="width: 30%"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-x id="siteWorks"  class="works">
+    <h2>作品集</h2>
+    <div class=" workcard clearfix";>
+      <div style=" float:left;width:30%;">
+      <img src="./img/works/musicbible.png" class="workimg"  >
+      </div>
+      <div style="float:right;width:60%;">
+      <ul class="descri" >MusicBible&nbsp;&nbsp;&nbsp;音乐播放器</ul>
+      <hr>
+      <dt class="descridt">功能实现</dt>
+      <dd class="descridd">在线搜索&nbsp;播放歌曲&nbsp;旋转歌曲封面&nbsp;<br/>展示评论区&nbsp;播放MV</dd>
+      <dt class="descridt">技术栈</dt>
+      <dd class="descridd">Vue + axios</dd>
+      <dt class="descridt">预览地址</dt>
+      <dd  href="https://mowmowj.github.io/Vue.Music.Bible.player/" class="descridd"><a href="https://mowmowj.github.io/Vue.Music.Bible.player/" target="_blank">mowmowj.github.io/Vue.Music.Bible.player/</a></dd>
     </div>
-    <main style="margin-top: -280px;">
-        <div class="userCard">
-        <div class="pictext clearfix">
-        <div class="avatar">
-            <img src="./img/avatar.jpg" width="280" height="400" alt="头像">
-        </div>
-        <div class="myself">
-            <span class="welcome">hola<span class="triangle"></span></span>
-            <h1 class="h1l">张知通</h1>
-                <p class="p1"> </p>
-            <hr class="hr1">
-            <dl>
-                <dt>年龄</dt>
-                <dd>22</dd>
-                <dt>城市</dt>
-                <dd>北京</dd>
-                <dt>学校</dt>
-                <dd>北京交通大学</dd>
-                <dt>邮箱</dt>
-                <dd>tongigles@icloud.com</dd>
-                <dt>手机号码</dt>
-                <dd>18801279107</dd>
-                <dt>毕业时间</dt>
-                <dd>2020年<span> </span><span> </span>7月<span> </span>1日</dd>
-            </dl>
-        </div>
-        </div>
-        
-            <footer class="media">
-                <a href="#" target="_blank" class="a1">
-                    <img class= icon1 src="./img/icon/email.png" width="30px" height="30px"  alt="">  
-                </a>
-                <a href="https://github.com/Mowmowj" target="_blank" class="a2">
-                    <img class= icon2 src="./img/icon/github.png" width="30px"height="30px" alt="">
-                </a>
-                <a href="https://mowmowj.github.io/"  target="_blank" class="a3">
-                    <img class= icon3 src="./img/icon/blogger.png"  width="30px" height="30px" alt="">
-                </a>
-                <!-- <a href=""><img src="./img/icon/ins.png"  width="20px" height="20px"  alt=""></a> -->
-                <!-- <a href=""><img src="./img/icon/weibo.png" width="20px" height="20px"alt=""></a> -->
-            </footer>
-        </div>
-        </div>
-        </div>
-        <p class="downloadRSCover">
-        <a class="downloadRS" href="./pdf/resume.doc" target="_blank" download>下载PDF 简历</a>
-        </p>>
-        <p class="intro">
-        张知通,  北京交通大学, 交通运输专业本科 自学前端半年 </br>
-        </p>
-    </main>
-    <section class="skills">
-        <h2>个人技能</h2>
-            <ol class="clearfix">
-                <li>
-                    <h3>HTML 5 & CSS3</h3>
-                    <div class="progress">
-                        <div class="jindu" style="width:80%"></div>
-                    </div>
-                </li>
-                <li>
-                    <h3>JavaScript</h3>
-                    <div class="progress">
-                        <div class="jindu" style="width:70%"></div>
-                    </div>
-                </li>                <li>
-                    <h3>jQuery</h3>
-                    <div class="progress" >
-                        <div class="jindu"style="width:85%"></div>
-                    </div>
-                </li>                <li>
-                    <h3>Vue</h3>
-                    <div class="progress">
-                        <div class="jindu" style="width:40%"></div>
-                    </div>
-                </li>                <li>
-                    <h3>Node.js</h3>
-                    <div class="progress">
-                        <div class="jindu" style="width:20%"></div>
-                    </div>
-                </li>                <li>
-                    <h3>Wechat miniprogram
-                    </h3>
-                    <div class="progress">
-                        <div class="jindu" style="width:30%"></div>
-                    </div>
-                </li>
-            </ol>
-    </section>
+    </div>
+     
+  </section>
+
+  <section class="works">
+    
+    <div class=" workcard clearfix";>
+      <div style=" float:left;width:30%;">
+      <img src="./img/works/resume.png" class="workimg"  >
+      </div>
+      <div style="float:right;width:60%;">
+      <ul class="descri" >ZZT.life&nbsp;&nbsp;&nbsp;个人简历网站</ul>
+      <hr>
+      <dt class="descridt">功能实现</dt>
+      <dd class="descridd">响应式布局&nbsp;模块化开发&nbsp;TweenJS实现缓动</br></dd>
+      <dt class="descridt">技术栈</dt>
+      <dd class="descridd">JS+CSS+Webpack</dd>
+      <dt class="descridt">预览地址</dt>
+      <dd class="descridd"><a href="https://mowmowj.github.io/myResWebsite/" target="_blank" >mowmowj.github.io/myResWebsite/</a></dd>
+    </div>
+    </div>
+  </section>
+  <section class="works">
+    <div class=" workcard clearfix";>
+      <div style=" float:left;width:30%;">
+      <img src="./img/works/covid.png" class="workimg"  >
+      </div>
+      <div style="float:right;width:60%;">
+      <ul class="descri" >COVID-19&nbsp;&nbsp;&nbsp;全国疫情分布统计网站</ul>
+      <hr>
+      <dt class="descridt">功能实现</dt>
+      <dd class="descridd">Node爬取每日疫情数据&nbsp;<br/>颜色区分感染程度<br/>自动统计前六省份</br></dd>
+      <dt class="descridt">技术栈</dt>
+      <dd class="descridd">Node.js+Echarts+JS+juery</dd>
+      <dt class="descridt">源码地址</dt>
+      <dd class="descridd"><a href="https://github.com/Mowmowj/COVID19" target="_blank" >github.com/Mowmowj/COVID19</a></dd>
+    </div>
+    </div>
     <section class="works">
-        <h2>作品集</h2>  
-    <nav>
-        <ol class="clearfix">
-            <li id="p1">ALL</li>
-            <li id="p2">FRAMEWORK</li>
-            <li id="p3">PURE JS & CSS</li>
-        </ol>
-        <div id="pb"class="bar">
-            <div class="bar-inner">     
-            </div>
-        </div>      
-    </nav>
-    <script>
-    p1.onclick=function(){
-    pb.className=("bar stt-1") ;
-}
-    p2.onclick=function(){
-    pb.className=("bar stt-2");
-}
-    p3.onclick=function(){
-    pb.className=("bar stt-3");
-}
-    </script>
-</section>
-    <div class="jobs"></div>
-    <div class="big"></div>
-    <div class="ui"></div>
-    <div class="yt"></div>
- <script href="text/JavaScript">
+    <div class=" workcard clearfix";>
+      <div style=" float:left;width:30%;">
+      <img src="./img/works/Bear.png" class="workimg"  >
+      </div>
+      <div style="float:right;width:60%;">
+      <ul class="descri" >Bear&nbsp;Note&nbsp;&nbsp;待办事项</ul>
+      <hr>
+      <dt class="descridt">功能实现</dt>
+      <dd class="descridd">记录数据&nbsp;统计总数&nbsp;一键清空</br></dd>
+      <dt class="descridt">技术栈</dt>
+      <dd class="descridd">Vue</dd>
+      <dt class="descridt">预览地址</dt>
+      <dd class="descridd"><a href="https://mowmowj.github.io/Vue-BearNote/" target="_blank">mowmowj.github.io/Vue-BearNote/</a></dd>
+    </div>
+    </div>
+  </section>
+  
+  <section class="message">
+    <h2></h2>
+    <ol>
+      <li></li>
+    </ol>
+    <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+    </form>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+  <script src="./js/base/View.js"></script>
+  <script src="./js/base/Model.js"></script>
+  <script src="./js/base/Controller.js"></script>
+  <script src="./js/auto-slide-up.js"></script>
+  <script src="./js/sticky-topbar.js"></script>
+  <script src="./js/smoothly-navigation.js"></script>
+</body>
 
-$(".media").children().css({"color:":"inherit","text-decoration":"none","padding":"20px"});
-
-
-
- </script>
- </body>
 </html>
