@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
   <link rel="stylesheet" href="./main.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
 <script src="https://at.alicdn.com/t/font_1655540_bcwgjsl0zk.js"></script>
 </head>
 
@@ -92,11 +93,16 @@
     </p>
 
     <p class="selfIntroduction">
-      张知通， 北京交通大学应届生，交通运输专业, 自学前端半年
-      <br> 熟悉JavaScript、jQuery、移动端页面开发,能用Vue实现简单网站开发,理解MVC、MVVC等思想,了解小程序开发
-      <br> 熟悉Linux命令行、学习过C语言、C#等在校课程  
+      张知通  北京交通大学  211院校  2020应届生 交通运输专业
+      <br/> 熟练使用JavaScript语言 熟练使用ES6;
+      <br/> 熟悉使用TypeScript语言
+      <br/> 掌握React框架 包括React Hooks (useEffect useState useRef..)
+      <br/> 熟悉Sass预编译器的使用
+      <br/> 掌握在Linux环境下开发
+      <br/> 了解nodeJS基本使用 了解新一代koa2框架 (理解同源 跨域 Eventloop)
+      <br/> 了解MongoDB数据库的基本使用
+      <br/> 了解HTTP,HTTPS协议,TCP/IP协议等概念
     </p>
-
   </main>
   <section data-x id="siteSkills" class="skills">
     <h2>技术栈</h2>
@@ -104,15 +110,15 @@
       
       <li>
         <h3>
-          JavaScript
+          JavaScript/ES6
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 60%"></div>
+          <div class="progress" style="width: 90%"></div>
         </div>
       </li>
       <li>
         <h3>
-          jQuery
+          TypeScript
         </h3>
         <div class="progressBar">
           <div class="progress" style="width: 70%"></div>
@@ -120,10 +126,10 @@
       </li>
       <li>
         <h3>
-          Vue.js
+          React
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 40%"></div>
+          <div class="progress" style="width: 70%"></div>
         </div>
       </li>
       <li>
@@ -136,15 +142,15 @@
       </li>
       <li>
         <h3>
-          Node.js
+          Node.js  
         </h3>
         <div class="progressBar">
-          <div class="progress"  style="width: 30%"></div>
+          <div class="progress"  style="width: 50%"></div>
         </div>
       </li>
       <li>
         <h3>
-          小程序
+          Linux
         </h3>
         <div class="progressBar">
           <div class="progress"  style="width: 30%"></div>
@@ -153,25 +159,25 @@
     </ol>
   </section>
   <section data-x id="siteWorks"  class="works">
-    <h2>作品集</h2>
+    <h2>作品集</h2><br/>
+  </section>
+  <section class="works">
     <div class=" workcard clearfix";>
       <div style=" float:left;width:30%;">
-      <img src="./img/works/musicbible.png" class="workimg"  >
+      <img src="./img/works/nexo.jpg" class="workimg"  >
       </div>
       <div style="float:right;width:60%;">
-      <ul class="descri" >MusicBible&nbsp;&nbsp;&nbsp;音乐播放器</ul>
+      <ul class="descri" >Nexo UI&nbsp;&nbsp;&nbsp;React组件库</ul>
       <hr>
       <dt class="descridt">功能实现</dt>
-      <dd class="descridd">在线搜索&nbsp;播放歌曲&nbsp;旋转歌曲封面&nbsp;<br/>展示评论区&nbsp;播放MV</dd>
+      <dd class="descridd">支持多样式Button Input Icon Menu等组件&nbsp;<br/>支持异步搜索 函数防抖 的SearchBox组件</dd>
       <dt class="descridt">技术栈</dt>
-      <dd class="descridd">Vue + axios</dd>
+      <dd class="descridd">Typescript + React + React Hooks + ES6 + Sass + StoryBook + {...Stack} = Nexo UI</dd>
       <dt class="descridt">预览地址</dt>
-      <dd  href="https://mowmowj.github.io/Vue.Music.Bible.player/" class="descridd"><a href="https://mowmowj.github.io/Vue.Music.Bible.player/" target="_blank">mowmowj.github.io/Vue.Music.Bible.player/</a></dd>
+      <dd class="descridd"><a href="https://mowmowj.github.io/nexo" target="_blank" >mowmowj.github.io/nexo</a></dd>
     </div>
     </div>
-     
   </section>
-
   <section class="works">
     
     <div class=" workcard clearfix";>
@@ -182,9 +188,9 @@
       <ul class="descri" >ZZT.life&nbsp;&nbsp;&nbsp;个人简历网站</ul>
       <hr>
       <dt class="descridt">功能实现</dt>
-      <dd class="descridd">响应式布局&nbsp;模块化开发&nbsp;TweenJS实现缓动</br></dd>
+      <dd class="descridd">响应式布局&nbsp;模块化开发&nbsp;<br/>1:1复刻Dribbble设计稿</br></dd>
       <dt class="descridt">技术栈</dt>
-      <dd class="descridd">JS+CSS+Webpack</dd>
+      <dd class="descridd">纯原生JavaScript+CSS3</dd>
       <dt class="descridt">预览地址</dt>
       <dd class="descridd"><a href="https://mowmowj.github.io/myResWebsite/" target="_blank" >mowmowj.github.io/myResWebsite/</a></dd>
     </div>
@@ -196,16 +202,34 @@
       <img src="./img/works/covid.png" class="workimg"  >
       </div>
       <div style="float:right;width:60%;">
-      <ul class="descri" >COVID-19&nbsp;&nbsp;&nbsp;全国疫情分布统计网站</ul>
+      <ul class="descri" >COVID-19&nbsp;&nbsp;&nbsp;全国疫情数据统计可视化网站</ul>
       <hr>
       <dt class="descridt">功能实现</dt>
-      <dd class="descridd">Node爬取每日疫情数据&nbsp;<br/>颜色区分感染程度<br/>自动统计前六省份</br></dd>
+      <dd class="descridd">Node爬取每日疫情数据&nbsp;<br/>Echarts渲染地图<br/></dd>
       <dt class="descridt">技术栈</dt>
-      <dd class="descridd">Node.js+Echarts+JS+juery</dd>
+      <dd class="descridd">Node.js+Echarts+JS</dd>
       <dt class="descridt">源码地址</dt>
       <dd class="descridd"><a href="https://github.com/Mowmowj/COVID19" target="_blank" >github.com/Mowmowj/COVID19</a></dd>
     </div>
     </div>
+  </section>
+    <section class="works">
+    <div class=" workcard clearfix";>
+      <div style=" float:left;width:30%;">
+      <img src="./img/works/musicbible.png" class="workimg"  >
+      </div>
+      <div style="float:right;width:60%;">
+      <ul class="descri" >MusicBible&nbsp;&nbsp;&nbsp;音乐播放器</ul>
+      <hr>
+      <dt class="descridt">功能实现</dt>
+      <dd class="descridd">在线搜索&nbsp;播放歌曲&nbsp;旋转歌曲封面&nbsp;<br/>展示评论区&nbsp;播放MV</dd>
+      <dt class="descridt">技术栈</dt>
+      <dd class="descridd">Vue + Axios</dd>
+      <dt class="descridt">预览地址</dt>
+      <dd  href="https://mowmowj.github.io/Vue.Music.Bible.player/" class="descridd"><a href="https://mowmowj.github.io/Vue.Music.Bible.player/" target="_blank">mowmowj.github.io/Vue.Music.Bible.player/</a></dd>
+    </div>
+    </div>
+  </section>
     <section class="works">
     <div class=" workcard clearfix";>
       <div style=" float:left;width:30%;">
@@ -217,7 +241,7 @@
       <dt class="descridt">功能实现</dt>
       <dd class="descridd">记录数据&nbsp;统计总数&nbsp;一键清空</br></dd>
       <dt class="descridt">技术栈</dt>
-      <dd class="descridd">Vue</dd>
+      <dd class="descridd">Vue + CSS</dd>
       <dt class="descridt">预览地址</dt>
       <dd class="descridd"><a href="https://mowmowj.github.io/Vue-BearNote/" target="_blank">mowmowj.github.io/Vue-BearNote/</a></dd>
     </div>
