@@ -5,16 +5,16 @@
     aTags: null,
     init: function(view){
       this.view = view
-      this.initAnimation()
+      // this.initAnimation()
       this.bindEvents()
     },
-    initAnimation: function(){
-      function animate(time) {
-        requestAnimationFrame(animate);
-        TWEEN.update(time);
-      }
-      requestAnimationFrame(animate);
-    },
+    // initAnimation: function(){
+    //   function animate(time) {
+    //     requestAnimationFrame(animate);
+    //     TWEEN.update(time);
+    //   }
+    //   requestAnimationFrame(animate);
+    // },
     scrollToElement: function(element){
       let top = element.offsetTop
       let currentTop = window.scrollY
